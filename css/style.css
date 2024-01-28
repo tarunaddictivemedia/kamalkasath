@@ -310,3 +310,89 @@ footer {
         font-size: 48%;
     }
 }
+@media(max-width: 1025px){
+    .container {
+        padding: 0 15px;
+    }
+}
+@media(max-width: 479px) {
+    /*header*/
+    .navigationwrapper .humbugur-menu, .navigationwrapper .nav .close {
+        display: inline-block !important;
+    }
+    .navigationwrapper .nav {
+        display: none;
+    }
+    .navigationwrapper .nav ul li svg path {
+        fill: #fff;
+    }
+    .navigationwrapper .nav {
+        position: fixed;
+        background: #3E2089;
+        top: 0;
+        z-index: 9;
+        height: 100vh;
+        left: 0;
+        display: none;
+        width: 100%;
+    }
+    .navigationwrapper .nav ul {
+        display: block;
+        text-align: center;
+    }
+    .navigationwrapper .nav .navinnr {
+        display: flex;align-items: center;justify-content: center;height: 100%;
+    }
+    .navigationwrapper .nav ul li a {
+        color: #fff;
+        font-size: 17px;
+    }
+    .navigationwrapper .nav ul li.active a {
+        color: #FB3E44;
+    }
+    .navigationwrapper .nav ul li {
+        padding: 0px 10px;
+    }
+    .navigationwrapper .nav .close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .ads img {
+        width: 100%;
+    }
+    .col-third {
+        width: calc(100% / 1);
+    }
+    .bloglistgrp {
+        padding: 1.5rem 0 3rem;
+    }
+    .featuredblog .flex.alignCenter .image {
+        padding: 20px  0;
+    }
+    .col-4, .col-3, .col-7  {
+        width: 100%;
+    }
+    .bannercntnt {
+        padding: 0 0 20px;
+    }
+    .bannercntnt .h1 {
+        font-size: 40px;
+    }
+    .logowrapper .logo img {
+        margin: 0;
+        padding: 20px 0;
+        width: 70px;
+    }
+    .barcntnt {
+        padding-left: 0;
+    }
+    .footerlink ul li {
+        width: 50%;
+        text-align: left;
+    }
+    .logofooter {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
