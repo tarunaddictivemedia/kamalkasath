@@ -420,31 +420,6 @@
 	</div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script type="text/javascript">
-	let container = document.querySelector(".container-fluid");
-let maskContainer = document.querySelector(".mask-container");
-let maskImageContainer = document.querySelector(".mask-image-container");
-
-let border = document.querySelector(".border");
-let circle = document.querySelector(".circle");
-
-circle.style.draggable = true;
-
-circle.ondrag = function(event){
-    maskContainer.style.width = event.pageX + "px";
-    border.style.left = event.pageX + "px";
-    circle.style.left = event.pageX + "px";
-}
-
-circle.ondragend = function(event){
-    maskContainer.style.width = event.pageX + "px";
-    border.style.left = event.pageX + "px";
-    circle.style.left = event.pageX + "px";
-}
-
-</script>
 <script>
 $(document).ready(function(){
   $(".humbugur-menu").click(function(){
@@ -454,26 +429,6 @@ $(document).ready(function(){
     $(".navigationwrapper .nav").hide();
   });
 });
-</script>
-<script type="text/javascript">
-	gsap.registerPlugin(ScrollTrigger);
-	gsap.to(".phoneapp", {
-		y: -130,
-		duration: 8,
-		scrollTrigger: {
-			trigger: ".phoneapp",
-			start: "top 60%",
-			end: "top 40%",
-			scrub: 3,
-			toggleActions: "restart	pause resume reset",
-			// 				onEnter	onLeave		onEnterBack		onLeaveBack
-			marker: {
-				startColor: "purple",
-				endColor: "fuchsia",
-				fontSize: "3rem",
-			}
-		}
-	})
 </script>
 
 </body>
